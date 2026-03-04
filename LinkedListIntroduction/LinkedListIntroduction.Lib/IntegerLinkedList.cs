@@ -25,6 +25,11 @@ public class IntegerLinkedList
             _head.Append(v);
 
     }
+    public void Prepend(int v)
+    {
+        var newNode = new IntegerNode(v);
+        newNode._next = this;
+    }
 
     public override string ToString()
     {
@@ -55,6 +60,7 @@ public class IntegerNode
         else
             _next.Append(v);
     }
+
 
     public override string ToString()
     {
